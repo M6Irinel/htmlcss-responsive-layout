@@ -22,7 +22,7 @@ a {
 }
 
 .container_large {
-    max-width: 1140px;
+    max-width: 1200px;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -60,7 +60,7 @@ a {
 .header_nav .button_white {
     background-color: #fff;
     color: #000;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 19px;
 }
 
@@ -88,6 +88,8 @@ a {
     font-size: 1.5rem;
 }
 
+/* VERSION TABLET */
+/* VERSIONE MOBILE */
 @media screen and (max-width: 810px) {
     .button_nav_mobile {
         display: block;
@@ -140,5 +142,116 @@ a {
 
     .header_nav #menu_mobile:not(:checked)~.button_nav_mobile .fa-xmark {
         display: none;
+    }
+}
+
+/* FIRST SECTION APP STORE */
+
+.app_store {
+    padding: 50px 0 105px;
+}
+
+.app_store li {
+    background-color: #b5ddff;
+    border-radius: 20px;
+}
+
+.app_store ul {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.app_store li {
+    padding: 2rem 1.5rem;
+}
+
+.app_store li.flex {
+    flex-grow: 2;
+    flex-basis: calc(((100% - 24px) / 3) * 2);
+}
+
+.app_store li:not(li.flex) {
+    flex-grow: 1;
+    flex-basis: calc((100% - 24px * 2) / 3);
+    text-align: center
+}
+
+.app_store li:not(li.flex) i {
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: #0084fd;
+}
+
+.app_store li h2 {
+    margin-bottom: 1.5rem;
+    color: #0084fd;
+    font-size: 1.4rem;
+}
+
+.app_store li p {
+    line-height: 2rem;
+    font-weight: bold;
+    color: #5a6e7f;
+    font-size: 1.05rem;
+}
+
+.app_store li .button_blue {
+    display: block;
+    text-align: center;
+    background-color: #0084fd;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: calc(47px / 2);
+    margin-top: 30px;
+    padding: 0.75rem 0;
+    max-width: 223px;
+}
+
+.app_store li.flex > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.app_store li.flex > .right {
+    text-align: center;
+    position: relative;
+}
+
+.app_store li.flex > .right img {
+    max-width: 250px;
+    margin-bottom: -2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* VERSION TABLET */
+@media screen and (max-width: 810px) {
+    .app_store li.flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app_store li.flex > .right img {
+        max-width: 250px;
+        margin-bottom: -2rem;
+        position: relative;
+        top: 5px;
+        margin-top: 35px;
+    }
+}
+
+/* VERSION MOBILE */
+@media screen and (max-width: 414px) {
+    .app_store li.flex > .right {
+        align-self: center;
+    }
+
+    .app_store li {
+        flex-wrap: 1;
+        flex-basis: 100% !important;
     }
 }
