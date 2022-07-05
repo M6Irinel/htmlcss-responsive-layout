@@ -103,7 +103,7 @@ a {
 
 /* VERSION TABLET */
 /* VERSIONE MOBILE */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 820px) {
     .button_nav_mobile {
         display: block;
     }
@@ -119,7 +119,7 @@ a {
         left: 50%;
         gap: 20px;
         background-color: var(--blue);
-        transition: height 0.5s;
+        transition: height 0.2s;
         z-index: 10;
     }
 
@@ -238,7 +238,7 @@ a {
 }
 
 /* VERSION TABLET */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 820px) {
     .app_store li.flex {
         flex-direction: column;
         align-items: flex-start;
@@ -341,7 +341,7 @@ a {
 }
 
 /* VERSION TABLET */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 820px) {
     .strategic .container_small {
         flex-direction: column;
         gap: 35px;
@@ -503,7 +503,7 @@ a {
 }
 
 /* VERSION TABLET */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 820px) {
     .benefits .cards .card {
         flex-basis: calc((100% - 2rem) / 2);
     }
@@ -648,7 +648,6 @@ a {
 .its_free .container_large p a {
     color: #fff;
     text-decoration: underline;
-    white-space: nowrap;
 }
 
 .its_free .container_large p a:hover {
@@ -667,5 +666,48 @@ a {
 
     .its_free .container_large > a {
         padding: 1.3rem;
+    }
+
+    .its_free .container_large p.copyright {
+        font-size: 0.9rem;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #333333;
+    padding: 38px 0;
+}
+
+footer .container_small {
+    text-align: center;
+    max-width: 430px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+footer .container_small p {
+    line-height: 1.4rem;
+    color: #fff;
+}
+
+footer .container_small p:first-child {
+    margin-bottom: 55px;
+}
+
+footer .container_small p a {
+    color: var(--violet);
+    text-decoration: underline;
+}
+
+footer .container_small p a:hover {
+    text-decoration: none;
+}
+
+/* VERSION MOBILE */
+@media screen and (max-width: 414px) {
+    footer .container_small p {
+        font-size: 0.9rem;
     }
 }
